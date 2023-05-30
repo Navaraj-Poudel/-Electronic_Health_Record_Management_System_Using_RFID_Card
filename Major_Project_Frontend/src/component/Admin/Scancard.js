@@ -9,6 +9,8 @@ import { storeToken } from '../../services/tokenService'
 
 import './style.css'
 import  scan from '../images/scan.png'
+
+
 const Scancard = () => {
 
     const [scannerData, setScannerData] = useState([]);
@@ -16,6 +18,7 @@ const Scancard = () => {
     const [patientLogin, {isLoading} ] = usePatientLoginAPIMutation();
     
     const navigate = useNavigate();
+
 
     const loginDetail1 = {email:"patient1@gmail.com",password:"abcd"}
 
